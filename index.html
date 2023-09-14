@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a6909c0f2b.js"></script>
+    <title>You Vídeos</title>
+  </head>
+
+  <body>
+    <!-- a tag abaixo está criando o cabeçalho da página -->
+    <header id="header"></header>
+    <main>
+      <iframe
+        src="https://www.youtube.com/"
+        frameborder="0"
+        width="100%"
+      ></iframe>
+      <form id="frm">
+        <input
+          type="text"
+          id="urlVideo"
+          placeholder="Digite o link do vídeo aqui"
+          required
+        />
+        <button type="submit">Adicionar vídeo</button>
+      </form>
+      <section id="videos"></section>
+    </main>
+    <footer id="footer"></footer>
+    <!--     <script src="../js/injectHeaderFooter.js"></script> -->
+    <script src="videoView.js" type="module"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="firebase.js"></script>
+  </body>
+</html>
